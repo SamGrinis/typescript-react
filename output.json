@@ -1,0 +1,45 @@
+{
+    "slug": "use-typescript-to-develop-react-applications",
+    "dependencies": {
+        "@types/react": "16.8.8",
+        "@types/react-dom": "16.8.2",
+        "react": "16.8.4",
+        "react-dom": "16.8.4",
+        "ts-loader": "5.3.3",
+        "typescript": "3.3.4000",
+        "webpack": "4.29.6",
+        "webpack-dev-server": "3.2.1",
+        "@types/enzyme": "3.9.1",
+        "@types/jest": "24.0.11",
+        "enzyme": "3.9.0",
+        "enzyme-adapter-react-16": "1.11.2",
+        "jest": "24.5.0",
+        "ts-jest": "24.0.0",
+        "webpack-cli": "^3.3.0"
+    },
+    "reviews": [
+        {
+            "performedOn": "2019-03-28",
+            "performedBy": 295133,
+            "scopeOfReview": "full",
+            "notes": [
+                {
+                    "type": "major issue",
+                    "title": "NPM Link doesn't work",
+                    "details": "When attempting to link 'Fancy' to 'Use' in Lesson 5, the project fails: 'TS2304: Cannot find name 'Fancy', upon running 'npm run build'. Photo of complete error message in the CHANGELOG.", 
+                    "lessons": ["05"],
+                    "dependency": "Fancy"
+                },
+                {
+                    "type": "minor issue",
+                    "title": "Start Script",
+                    "details": "start script had to be updated from  from: \"scripts\": { \"build\": \"webpack -p\", \"start\": \"webpack-dev-server -d --content-base ./public\" to \"scripts\": { \"build\": \"webpack -p\", \"start\": \"webpack-dev-server -d --content-base ./public\" ",
+                    "lessons": [
+                        "01-08"
+                    ],
+                    "dependency": "react, typescript"
+                }
+            ]
+        }
+    ]
+}
